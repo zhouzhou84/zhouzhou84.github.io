@@ -292,19 +292,23 @@
       
       <!-- .entry-content -->
       
-<div id="vcomments"></div>
-<script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
-        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
-        path: window.location.pathname,
-        placeholder: "你是我一生只会遇见一次的惊喜 ..."
-      })
-  }
-</script>
+  
+    <div id="vcomments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'Sie94ru5R6yexV37SxUlPL3j-gzGzoHsz',
+            appKey: 'bvNQG7WXKzBBBV7c5CrQjV5S',
+            notify:false, 
+            verify:false, 
+            visitor:false,
+            avatar:'mm', 
+            placeholder: '你是我一生只会遇见一次的惊喜 ...' 
+        })
+    </script>
+  
 
       
       <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
