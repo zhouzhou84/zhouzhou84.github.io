@@ -221,7 +221,7 @@
               </li>
             
               <li>
-                <a href="/">
+                <a href="/timeline">
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
                     时间轴
@@ -235,16 +235,6 @@
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-cogs" aria-hidden="true"></i>
                     储物室
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
-                <a href="/links/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
-                    友人帐
                   </span>
                 </a>
                 
@@ -514,7 +504,9 @@
       <span <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i>
         
         </span>
+        <span id="timeDate" style="color: rgb(255, 192, 203);">载入天数...</span><span id="times" style="color: rgb(255, 192, 203);">载入时分秒...</span>
       </p>
+
     </div>
   </div><!-- .site-info -->
 </footer>
@@ -585,6 +577,24 @@ $(document).ready(function() {
 });
 </script>
 
+
+
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("12/29/2019 17:38:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "我们已经相爱了 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
     <div class="openNav no-select" style="height: 50px;">
       <div class="iconflat no-select" style="width: 50px; height: 50px;">
         <div class="icon"></div>
@@ -653,7 +663,7 @@ $(document).ready(function() {
       </li>
     
       <li>
-        <a href="/">
+        <a href="/timeline">
           <span class="faa-parent animated-hover">
             <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
             时间轴
@@ -667,16 +677,6 @@ $(document).ready(function() {
           <span class="faa-parent animated-hover">
             <i class="fa  fa-cogs" aria-hidden="true"></i>
             储物室
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
-        <a href="/links/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-link faa-shake" aria-hidden="true"></i>
-            友人帐
           </span>
         </a>
         
@@ -788,6 +788,11 @@ $(document).ready(function() {
     })
   });
 </script>
+  <div id="gif" style="position:fixed;bottom:25px;left:25px;width:60px;height:60px;">
+    <a href="/">
+      <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-love109.cn@2.0.6/images/loli.gif">
+    </a>
+  </div>
 </body>
 </html>
 <!-- 樱花特效 -->
@@ -796,3 +801,4 @@ $(document).ready(function() {
 <script type="text/javascript" src="/js/FunnyTitle.js"></script>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/love.js"></script>
+
