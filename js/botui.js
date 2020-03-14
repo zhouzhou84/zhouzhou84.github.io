@@ -65,7 +65,7 @@ function bot_ui_ini() {
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: "本小屋建立于2020-3-7"
+                content: "本小屋建立于2020-2-29"
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
