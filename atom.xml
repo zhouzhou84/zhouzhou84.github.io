@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-08-22T11:18:12.712Z</updated>
+  <updated>2020-09-06T07:37:39.078Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>憨憨慧的生日</title>
+    <link href="/2020/09/08/%E6%86%A8%E6%86%A8%E6%85%A7%E7%9A%84%E7%94%9F%E6%97%A5/"/>
+    <id>/2020/09/08/憨憨慧的生日/</id>
+    <published>2020-09-07T16:00:00.000Z</published>
+    <updated>2020-09-06T07:37:39.078Z</updated>
+    
+    <summary type="html">
+    
+      第一次一起过生日
+    
+    </summary>
+    
+      <category term="生活" scheme="/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="love" scheme="/tags/love/"/>
+    
+      <category term="生日" scheme="/tags/%E7%94%9F%E6%97%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>第一个七夕</title>
