@@ -3938,7 +3938,7 @@ li.feature-2 {
 }
 @media(max-width:860px) {
     #centerbg {
-        height:300px;
+        height:100vh;
         background-attachment:scroll
     }
     .focusinfo .header-tou img {
